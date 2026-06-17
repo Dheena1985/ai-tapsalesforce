@@ -1,0 +1,14 @@
+{
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/results": true
+  },
+  "robot.language": "en",
+  "python-envs.pythonProjects": [
+    {
+      "path": ".git-robot",
+      "envManager": "ms-python.python:venv",
+      "packageManager": "ms-python.python:pip"
+    }
+  ]
+}

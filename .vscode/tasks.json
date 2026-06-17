@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Install Robot Framework dependencies",
+      "type": "shell",
+      "command": "python -m pip install --upgrade pip && python -m pip install -r requirements.txt",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Salesforce tests",
+      "type": "shell",
+      "command": "python -m robot -d results tests",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
